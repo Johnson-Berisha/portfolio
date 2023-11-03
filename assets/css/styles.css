@@ -14,8 +14,8 @@
 }
 
 body {
-    background: black;
-    color: white;
+    background: #f3f3f3;
+    color: black;
     font-family: 'Inter', sans-serif;
     height: 100vh;
 }
@@ -23,6 +23,8 @@ body {
 .home {
     margin: 0 70px;
     height: 100%;
+    background-image: url('../img/homebg.svg');
+    background-size: contain;
 }
 
 .header {
@@ -41,7 +43,7 @@ body {
 }
 .link {
     text-decoration: none;
-    color: var(--primary);
+    color: var(--black);
     font-family: 'Work Sans', sans-serif;
     font-size: 18px;
 }
@@ -57,24 +59,25 @@ body {
 }
 
 .hero {
-    height: 90%;
+    height: 75%;
     flex-direction: column;
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
 }
 
 
 .hero-content {
-    width: 100%;  
-    flex-direction: column;
+    width: 80%;  
+    margin-left: 100px;
+    /* flex-direction: column;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
 }
 
 .hero-h1 {
-    color: var(--primary);
+    color: var(--black);
 font-family: Inter;
 font-size: 124px;
 font-style: normal;
@@ -85,10 +88,35 @@ display: block;
 }
 
 .hero-small-text {
-    color: var(--secondary);
+    color: #6e6e6e;
 font-family: Inter;
 font-size: 28px;
 font-style: normal;
 font-weight: 500;
 line-height: normal;
+}
+
+/* social */
+
+.social {
+    height: 15%;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-link{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px #d3d3d3;
+}
+
+.social-link a img {
+    width: 25px;
+    height: 25px;
 }
