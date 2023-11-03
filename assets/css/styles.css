@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat&family=Open+Sans&family=Work+Sans&display=swap');
 
 :root {
-    --primary: #FFFDD0;
-    --secondary: #807F68;
+    --primary: #32d5eb;
+    --secondary: #2ab8cb;
     --black: #000000;
     --white: #ffffff;
 }
@@ -236,8 +236,40 @@ cursor: pointer;
 .eam-txt1, .eam-txt2 {
     color: #000;
 font-family: Inter;
-font-size: 124px;
+font-size: 100px;
 font-style: normal;
 font-weight: 700;
 line-height: 140.523%; /* 174.248px */
+position: absolute;
+transform: translate(-55%, 0);
+}
+
+.eam-txt2 {
+    transform: translate(55%, 0);
+}
+
+/* actual about */
+
+.about {
+    height: 100vh;
+    width: 200%;
+    display: flex;
+}
+
+.abt-firstsec {
+    height: 100%;
+    width: 100%;
+    background: #AEE2FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.abt-actualsec {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: red; */
 }
