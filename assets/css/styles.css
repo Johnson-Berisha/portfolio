@@ -18,6 +18,7 @@ body {
     color: black;
     font-family: 'Inter', sans-serif;
     height: 100vh;
+    overflow-x: hidden;
 }
 
 .home {
@@ -46,6 +47,11 @@ body {
     color: var(--black);
     font-family: 'Work Sans', sans-serif;
     font-size: 18px;
+    transition: .2s;
+}
+
+.link:hover {
+    transform: scale(1.2);
 }
 
 .logo {
@@ -66,6 +72,22 @@ body {
     /* align-items: center; */
 }
 
+.blob {
+    position: absolute;
+    top: 28%;
+    right: 8%;
+    width: 400px;
+    height: 400px;
+}
+
+.blob2 {
+    position: absolute;
+    top: 23%;
+    right: 18%;
+    width: 400px;
+    height: 400px;
+    transform: rotateZ(-25deg);
+}
 
 .hero-content {
     width: 80%;  
@@ -114,9 +136,108 @@ line-height: normal;
     justify-content: center;
     align-items: center;
     border: solid 2px #d3d3d3;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.social-link:hover {
+    transform: scale(1.2);
 }
 
 .social-link a img {
     width: 25px;
     height: 25px;
+}
+
+/* small about */
+
+.smallabout {
+    height: 75vh;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 70px;
+}
+
+.smallabout-content {
+    width: 607px;
+    /* background-color: red; */
+    height: 100%;
+}
+
+.sabt-img {
+    /* background-color: blue; */
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.sabt-img img {
+    width: 480px;
+height: 474px;
+border-radius: 10px;
+border: #000 solid 1px;
+}
+
+.sabt-smalltxt {
+    color: #000;
+font-family: Inter;
+font-size: 17px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+.sabt-bigtxt {
+    margin-top: 10px;
+    color: #000;
+font-family: Inter;
+font-size: 32px;
+font-style: normal;
+font-weight: 700;
+line-height: 140.523%; /* 44.967px */
+width: 100%;
+}
+
+.sabt-btn {
+    display: inline-flex;
+padding: 12px 26px;
+justify-content: center;
+align-items: center;
+border-radius: 29.5px;
+border: 2px solid #9747FF;
+color: #9747FF;
+font-family: Inter;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 140.523%; /* 22.484px */
+margin-top: 25px;
+transition: all .2s;
+cursor: pointer;
+}
+
+.sabt-btn:hover {
+    background-color: #9747FF;
+    color: white;
+    transform: scale(1.1);
+}
+
+/* eam effect */
+
+.eam-effect {
+    height: 150px;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.eam-txt1, .eam-txt2 {
+    color: #000;
+font-family: Inter;
+font-size: 124px;
+font-style: normal;
+font-weight: 700;
+line-height: 140.523%; /* 174.248px */
 }
