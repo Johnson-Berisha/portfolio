@@ -1,0 +1,10 @@
+:root {
+  --bg: black;
+  --color: white;
+}
+
+body {
+  margin: unset;
+  color: var(--color);
+  background: var(--bg);
+}
