@@ -2,6 +2,8 @@ import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import Header from "@/design/components/header/header"
 
+import Lenis from "@/app/lenis"
+
 import "@/design/style/global.css"
 
 const inter = Inter({ subsets: ["latin"] })
@@ -19,16 +21,16 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-      <link
-  rel="icon"
-  href="@/public/img/logo.svg"
-  type="image/<generated>"
-  sizes="<generated>"
-/>
+        <link
+          rel="icon"
+          href="@/public/img/logo.svg"
+          type="image/<generated>"
+          sizes="<generated>"
+        />
       </head>
       <body className={inter.className}>
-    
         {children}
+        <Lenis />
       </body>
     </html>
   )
