@@ -3,7 +3,10 @@ import Header from "@/design/components/header/header"
 
 export default function Home() {
   return (
+
+    
     <main>
+      
       <div className="home">
         <div className="header">
           <div className="logo">
@@ -22,7 +25,7 @@ export default function Home() {
             <a href="#" className="link">
               Work
             </a>
-            <a href="#" className="link">
+            <a href="#" className="link bold-link">
               Contact
             </a>
           </div>
@@ -30,8 +33,8 @@ export default function Home() {
         <div className="hero">
           <div className="hero-content">
             <p className="hero-small-text">Hello, I’m</p>
-            <h1 className="hero-h1">Johnson</h1>
-            <h1 className="hero-h1">Berisha</h1>
+            <h1 className="hero-h1 hh1-1">Johnson</h1>
+            <h1 className="hero-h1 hh1-2">Berisha</h1>
 
             <Image
               width="40"
@@ -77,7 +80,7 @@ export default function Home() {
           </div>
           <div className="social-link">
             <a href="https://twitter.com/BerishaGjonson">
-              <Image width="40" height="40" src="/img/twitter.svg" alt="" />
+              <Image className="sl-t" width="40" height="40" src="/img/twitter.svg" alt="" />
             </a>
           </div>
         </div>
@@ -85,11 +88,11 @@ export default function Home() {
       <div className="smallabout">
         <div className="smallabout-content">
           <div className="sabt-smalltxt">About Me</div>
-          <div className="sabt-bigtxt">
+          <div className="sabt-bigtxt sabt-bt-1">
             I’m a web developer with a passion for building excellent websites,
             applications and everything in between.
           </div>
-          <div className="sabt-bigtxt">
+          <div className="sabt-bigtxt sabt-bt-2">
             I specialize in building and designing exceptional digital
             experiences. Currently, I’m focused on building responsive
             full-stack web applications.
@@ -97,7 +100,7 @@ export default function Home() {
           <button className="sabt-btn">Get In Touch</button>
         </div>
         <div className="sabt-img">
-          <Image width="40" height="40" src="/img/me.jpg" alt="me!" />
+          <Image width="480" height="474" src="/img/me.jpg" alt="me!" />
         </div>
       </div>
       <div className="eam-effect">
