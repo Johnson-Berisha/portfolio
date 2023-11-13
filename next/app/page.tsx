@@ -121,7 +121,7 @@ export default function Home() {
       <div className="about" id="horizontal">
         <div className="abt-firstsec" id="h-item">
           <div className="abtfs-txt">
-            <span className="abtfs-txt">1/5</span>
+            <span className="abtfs-txt-2">1/5</span>
             About Me
           </div>
         </div>
