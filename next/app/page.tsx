@@ -1,12 +1,16 @@
+"use client"
+
 import Image from "next/image"
 import Header from "@/design/components/header/header"
+import { ReactLenis } from "@studio-freight/react-lenis"
 
 export default function Home() {
   return (
-
-    
     <main>
-      
+      {/* <ReactLenis
+      root
+      options={{ orientation: "vertical", gestureOrientataion: "both" }}
+    > */}
       <div className="home">
         <div className="header">
           <div className="logo">
@@ -80,7 +84,13 @@ export default function Home() {
           </div>
           <div className="social-link">
             <a href="https://twitter.com/BerishaGjonson">
-              <Image className="sl-t" width="40" height="40" src="/img/twitter.svg" alt="" />
+              <Image
+                className="sl-t"
+                width="40"
+                height="40"
+                src="/img/twitter.svg"
+                alt=""
+              />
             </a>
           </div>
         </div>
@@ -118,17 +128,30 @@ export default function Home() {
         </div>
         <div className="eam-txt2">Everything About Me</div>
       </div>
-      <div className="about" id="horizontal">
-        <div className="abt-firstsec" id="h-item">
+      {/* <div className="about" id="horizontal">
+        <div className="slide-item abt-firstsec" id="h-item-1">
           <div className="abtfs-txt">
             <span className="abtfs-txt-2">1/5</span>
             About Me
           </div>
         </div>
-        <div className="abt-actualsec" id="h-item">
+        <div className="slide-item abt-actualsec" id="h-item-2">
           <h1>yooooo it actually works(suprisingly since my js is sh*t)</h1>
         </div>
-      </div>
+        <div className="slide-item abt-actualsec" id="h-item-3">
+          <h1>yooooo it actually works(suprisingly since my js is sh*t)</h1>
+        </div>
+        <div className="slide-item abt-actualsec" id="h-item-4">
+          <h1>yooooo it actually works(suprisingly since my js is sh*t)</h1>
+        </div>
+        <div className="slide-item abt-actualsec" id="h-item-5">
+          <h1>yooooo it actually works(suprisingly since my js is sh*t)</h1>
+        </div>
+        <div className="slide-item abt-actualsec" id="h-item-6">
+          <h1>yooooo it actually works(suprisingly since my js is sh*t)</h1>
+        </div>
+      </div> */}
+      {/* </ReactLenis> */}
     </main>
   )
 }
