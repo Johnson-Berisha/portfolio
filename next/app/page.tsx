@@ -1,8 +1,8 @@
 "use client"
 
 import Image from "next/image"
-import Header from "@/design/components/header/header"
-import { ReactLenis } from "@studio-freight/react-lenis"
+import SectionList from "@/design/components/sectionList";
+
 
 export default function Home() {
   return (
@@ -128,30 +128,11 @@ export default function Home() {
         </div>
         <div className="eam-txt2">Everything About Me</div>
       </div>
-      {/* <div className="about" id="horizontal">
-        <div className="slide-item abt-firstsec" id="h-item-1">
-          <div className="abtfs-txt">
-            <span className="abtfs-txt-2">1/5</span>
-            About Me
-          </div>
-        </div>
-        <div className="slide-item abt-actualsec" id="h-item-2">
-          <h1>yooooo it actually works(suprisingly since my js is sh*t)</h1>
-        </div>
-        <div className="slide-item abt-actualsec" id="h-item-3">
-          <h1>yooooo it actually works(suprisingly since my js is sh*t)</h1>
-        </div>
-        <div className="slide-item abt-actualsec" id="h-item-4">
-          <h1>yooooo it actually works(suprisingly since my js is sh*t)</h1>
-        </div>
-        <div className="slide-item abt-actualsec" id="h-item-5">
-          <h1>yooooo it actually works(suprisingly since my js is sh*t)</h1>
-        </div>
-        <div className="slide-item abt-actualsec" id="h-item-6">
-          <h1>yooooo it actually works(suprisingly since my js is sh*t)</h1>
-        </div>
-      </div> */}
-      {/* </ReactLenis> */}
+      
+    <main className="images">
+      <SectionList />
+    </main>
+   
     </main>
   )
 }

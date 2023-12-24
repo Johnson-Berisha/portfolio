@@ -1,10 +1,9 @@
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
-import Header from "@/design/components/header/header"
-
-import Lenis from "@/app/lenis"
-
+import SmoothScrolling from "@/design/components/SmoothScrolling";
 import "@/design/style/global.css"
+
+
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -29,8 +28,9 @@ export default function RootLayout({
         />
       </head>
       <body className={inter.className}>
-        {children}
-        <Lenis />
+    
+        <SmoothScrolling>{children}</SmoothScrolling>
+
       </body>
     </html>
   )

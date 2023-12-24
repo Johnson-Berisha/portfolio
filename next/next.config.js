@@ -20,8 +20,9 @@ const nextConfig = {
       ],
       formats: ["image/webp"],
     },
+
     // output: "export",
   }
   
   module.exports = nextConfig
-  
+
