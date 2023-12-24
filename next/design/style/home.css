@@ -82,6 +82,11 @@ body {
     right: 8%;
     width: 400px;
     height: 400px;
+    transition: transform .3s;
+}
+
+.blob:hover {
+    transform: scale(1.05);
 }
 
 .blob2 {
@@ -91,7 +96,10 @@ body {
     width: 400px;
     height: 400px;
     transform: rotateZ(-25deg);
+
+
 }
+
 
 .hero-content {
     width: 80%;  
@@ -111,11 +119,18 @@ font-weight: 700;
 line-height: normal;
 max-width: 80%;
 display: block;
+transition: transform .3s;
+}
+
+.hero-h1:hover {
+    transform: scale(1.05);
 }
 
 .hh1-1 {
     transform: translate(-5px, 0px);
+    /* display: inline; */
 }
+
 
 .hero-small-text {
     color: #6e6e6e;
@@ -126,6 +141,9 @@ font-weight: 500;
 line-height: normal;
 transform: translate(20px, 0px);
 }
+
+
+
 
 /* social */
 
@@ -314,5 +332,5 @@ top: -15px;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background: red; */
+    background: red;
 }
