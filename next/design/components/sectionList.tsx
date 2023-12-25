@@ -1,67 +1,46 @@
-import React from "react";
+import React, {useRef, useEffect} from "react";
 import { gsap } from "gsap";
-import { useEffect, useRef } from "react";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+export default function ScrollSection() {
 
+    const sectionRef = useRef(null);
+    const triggerRef = useRef(null);
 
+    gsap.registerPlugin(ScrollTrigger);
 
-const SectionList = () => {
-   
-const sectionRef = useRef(null);
-const triggerRef = useRef(null);
-
-gsap.registerPlugin(ScrollTrigger);
-
-useEffect(() => {
-    const pin = gsap.fromTo(sectionRef.current, {
-        translateX: 0
-    }, {
-        translateX: "300vh",
-        ease: "none",
-        duration: 1,
-        ScrollTrigger: {
-            trigger: triggerRef,
-            start: "top top",
-            end: "2000 top",
-            scrub: 0.6,
-            pin: true
-        }
-
-    })
-
-    return () => {
-pin.kill()
-    }
-
-}, []);
+    useEffect(() => {
+      
+        const pin = gsap.fromTo(sectionRef.current, {
+            translateX: 0
+        }, {
+            translateX: "-178vh",
+            ease: "none",
+            duration: 1,
+            scrollTrigger: {
+                trigger: triggerRef.current,
+                start: "top top",
+                end: "2000 top",
+                scrub: true,
+                pin: true
+            }
+        })
+    
+      return () => {
+        pin.kill()
+      }
+    }, [])
+    
 
   return (
-    <>
-     <div ref={triggerRef} className="about" id="horizontal">
-        <div className="sections" ref={sectionRef}>
-        <div className="abt-firstsec" id="h-item">
-            <div className="abtfs-txt">
-                <span className="abtfs-txt-2">1/5</span>
-                About Me
-            </div>
+   <section className="scroll-section-outer">
+    <div ref={triggerRef}>
+        <div ref={sectionRef} className="scroll-section-inner">
+            <div className="scroll-section"><h3>section 1</h3></div>
+            <div className="scroll-section"><h3>section 2</h3></div>
             
         </div>
-
-        <div className="abt-actualsec" id="h-item">
-            
-            <h1>yooooo it actually works</h1>
-            
-    
-        </div>
-        </div>
- 
     </div>
-    </>
-  );
-    };
-
-
-
-
-export default SectionList;
+   </section>
+  )
+}
