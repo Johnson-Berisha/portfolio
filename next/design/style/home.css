@@ -96,7 +96,7 @@ body {
     width: 400px;
     height: 400px;
     transform: rotateZ(-25deg);
-
+    pointer-events: none;
 
 }
 
@@ -431,8 +431,8 @@ background: radial-gradient(circle, rgba(255, 255, 255, 0) 2%, rgba(0,0,0,1) 98%
   .about-big-section {
     height: 85vh;
     width: 100vw;
-    padding: 50px 100px 40px 100px;
-
+    padding: 20px 100px 50px 100px;
+    position: relative;
   }
 
   .highlight {
@@ -448,10 +448,106 @@ background: radial-gradient(circle, rgba(255, 255, 255, 0) 2%, rgba(0,0,0,1) 98%
     font-size: smaller;
 }
 
-a {
-    color: #32d5eb;
+.custom-shape-divider-bottom-1703709061 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
 }
 
-big {
-    font-size: 40px;
+.custom-shape-divider-bottom-1703709061 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 76px;
+}
+
+.custom-shape-divider-bottom-1703709061 .shape-fill {
+    fill: #93C6E7;
+}
+
+.custom-shape-divider-top-1703709304 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1703709304 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 76px;
+}
+
+.custom-shape-divider-top-1703709304 .shape-fill {
+    fill: #FFFFFF;
+}
+
+.skillsection-1 {
+    position: relative;
+    height: 90vh;
+    background-color: #93C6E7;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.skillsinfo .abtfs-txt {
+    transform: translateY(-15px);
+}
+
+.skillsection-2 {
+    height: 100vh;
+    padding: 2rem 0 2rem 5rem;
+    display: flex;
+    /* align-items: center; */
+}
+
+.skillsImgSec {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    position: relative;
+}
+
+/* .skillsection-2 .skillsimg {
+    border: 1px solid black;
+} */
+
+.skillsText h1 {
+    font-size: 60px;
+    width:355px;
+font-family: serif;
+    font-weight: bolder;
+    text-transform: uppercase;
+    border-bottom: #c0c0c06b 2px solid;
+
+    color: #c0c0c06b;
+}
+
+.skillsText p {
+    color: rgba(65, 65, 65, 0.833);
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 40px;
+}
+
+.skillsImgSec p {
+    font-size: 30px;
+    width:550px;
+font-family: serif;
+    font-weight: bolder;
+    text-transform: uppercase;
+    border-bottom: #c0c0c06b 2px solid;
+    position: absolute;
+    color: #c0c0c06b;
+    top: 58px;
+    transform: translateX(-50%);
+    left: 50%;
 }
