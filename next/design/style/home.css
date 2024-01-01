@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat&family=Open+Sans&family=Work+Sans&display=swap');
 
+  @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
+
+  
+
 :root {
     --primary: #32d5eb;
     --secondary: #2ab8cb;
@@ -503,51 +507,50 @@ background: radial-gradient(circle, rgba(255, 255, 255, 0) 2%, rgba(0,0,0,1) 98%
 }
 
 .skillsection-2 {
-    height: 100vh;
+    height: 400vh;
     padding: 2rem 0 2rem 5rem;
-    display: flex;
+ 
     /* align-items: center; */
+    background-color: black;
 }
 
-.skillsImgSec {
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    position: relative;
-}
 
-/* .skillsection-2 .skillsimg {
-    border: 1px solid black;
-} */
-
-.skillsText h1 {
+.titleSec {
+    
     font-size: 60px;
-    width:355px;
-font-family: serif;
-    font-weight: bolder;
-    text-transform: uppercase;
-    border-bottom: #c0c0c06b 2px solid;
+    line-height: 74px;
+    padding-left: 40px;
 
-    color: #c0c0c06b;
 }
 
-.skillsText p {
-    color: rgba(65, 65, 65, 0.833);
-    font-weight: 500;
-    font-size: 22px;
-    line-height: 40px;
+.title {
+    color:white; font-size:70px; line-height:98px; font-family: 'Libre Baskerville', serif; padding-top:30px; padding-bottom:30px; width:90%; background-color:transparent; margin:40px auto; overflow:hidden; box-sizing: border-box; font-kerning: none;
+}
+.title span {
+    color: var(--primary);
 }
 
-.skillsImgSec p {
-    font-size: 30px;
-    width:550px;
-font-family: serif;
-    font-weight: bolder;
-    text-transform: uppercase;
-    border-bottom: #c0c0c06b 2px solid;
-    position: absolute;
-    color: #c0c0c06b;
-    top: 58px;
-    transform: translateX(-50%);
-    left: 50%;
+.cluster {
+    position:relative; top: -3%; width:100%; max-width:874px; height:792px; margin:0 auto; background-color:transparent; 
+}
+
+.clusterPieces{position:absolute;}
+
+.circle{width:100%; max-width:360px; height:360px; border-radius:50%; background-color:#fc659e; left:214px; bottom:-5%; z-index:1;}
+
+
+.dotsBlue{width:100%; height:auto; max-width:494px; max-height:434px; z-index:3; left:-80%; top:50px;}
+
+.me{width:100%; height:auto; max-width:450px; max-height:700px; top:20%; right:0; z-index:2;}
+
+span.html {
+    color: #f06529;
+}
+
+span.css {
+    color: #2965f1;
+}
+
+span.js {
+    color: #f0db4f;
 }
