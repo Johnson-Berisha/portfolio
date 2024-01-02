@@ -127,8 +127,8 @@ export default function Home() {
       </div>
 
       <main className="images">
-        {/* <SectionList />
-        <SkillsSec /> */}
+        <SectionList />
+        {/* <SkillsSec /> */}
       </main>
     </main>
   )
