@@ -1,17 +1,13 @@
 "use client"
 
 import Image from "next/image"
-import SectionList from "@/design/components/sectionList";
+import SectionList from "@/design/components/sectionList"
 import SkillsSec from "@/design/components/skillsSec"
-
 
 export default function Home() {
   return (
     <main>
-      {/* <ReactLenis
-      root
-      options={{ orientation: "vertical", gestureOrientataion: "both" }}
-    > */}
+
       <div className="home">
         <div className="header">
           <div className="logo">
@@ -129,13 +125,11 @@ export default function Home() {
         </div>
         <div className="eam-txt2">Everything About Me</div>
       </div>
-      
-    <main className="images">
-      <SectionList />
-      <SkillsSec />
 
-    </main>
-   
+      <main className="images">
+        {/* <SectionList />
+        <SkillsSec /> */}
+      </main>
     </main>
   )
 }
