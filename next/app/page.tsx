@@ -128,7 +128,7 @@ export default function Home() {
 
       <main className="images">
         <SectionList />
-        {/* <SkillsSec /> */}
+        <SkillsSec />
       </main>
     </main>
   )
