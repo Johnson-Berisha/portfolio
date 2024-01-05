@@ -2,7 +2,7 @@
 
 import Image from "next/image"
 import SectionList from "@/design/components/sectionList"
-import SkillsSec from "@/design/components/skillsSec"
+
 
 export default function Home() {
   return (
@@ -123,13 +123,15 @@ export default function Home() {
             <circle cx="7.5" cy="7.5" r="7.5" fill="black" />
           </svg>
         </div>
-        <div className="eam-txt2">Everything About Me</div>
+        <div className="eam-txt2">Everything About Me Not</div>
       </div>
 
       <main className="images">
         <SectionList />
-        <SkillsSec />
+      
       </main>
     </main>
   )
 }
+
+
