@@ -470,7 +470,7 @@ background: radial-gradient(circle, rgba(255, 255, 255, 0) 2%, rgba(0,0,0,1) 98%
 }
 
 .custom-shape-divider-bottom-1703709061 .shape-fill {
-    fill: #93C6E7;
+    fill: black;
 }
 
 .custom-shape-divider-top-1703709304 {
@@ -497,19 +497,56 @@ background: radial-gradient(circle, rgba(255, 255, 255, 0) 2%, rgba(0,0,0,1) 98%
     height: 100vh;
     background-color: #000;
     color: white;
-}
-
-.reveal {
-    padding-left: 25%;
-    padding-right: 10%;
     
 }
 
-.reveal-text {
-    font-size: 4rem;
-    font-family: "Libre Baskerville", serif;
-    color: #000;
-    filter: drop-shadow(0 0 0, 0.06rem rgb(255, 255, 255));
-
-
+.container {height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
 }
+
+.scrollbar {
+    width: 5px;
+    height: 100%;
+    background-color: white;
+    position: relative;
+}
+
+.scrollbar::after {
+    content: '';
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 35%;
+    left: -7px;
+}
+
+.scrollbar::before {
+    content: '';
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 85%;
+    left: -7px;
+}
+
+
+.skills-text {
+    height: 100%;
+    padding: 5rem 2.5rem;
+    font-size: 23px;
+    font-family: 'Libre Baskerville', serif;
+    line-height: 29px;
+}
+
+
+
