@@ -493,64 +493,23 @@ background: radial-gradient(circle, rgba(255, 255, 255, 0) 2%, rgba(0,0,0,1) 98%
     fill: #FFFFFF;
 }
 
-.skillsection-1 {
-    position: relative;
-    height: 90vh;
-    background-color: #93C6E7;
-    display: flex;
-    justify-content: center;
-    align-items: center;    
+.skills {
+    height: 100vh;
+    background-color: #000;
+    color: white;
 }
 
-.skillsinfo .abtfs-txt {
-    transform: translateY(-15px);
-}
-
-.skillsection-2 {
-    height: 400vh;
-    padding: 2rem 0 2rem 5rem;
- 
-    /* align-items: center; */
-    background-color: black;
-}
-
-
-.titleSec {
+.reveal {
+    padding-left: 25%;
+    padding-right: 10%;
     
-    font-size: 60px;
-    line-height: 74px;
-    padding-left: 40px;
-
 }
 
-.title {
-    color:white; font-size:70px; line-height:98px; font-family: 'Libre Baskerville', serif; padding-top:30px; padding-bottom:30px; width:90%; background-color:transparent; margin:40px auto; overflow:hidden; box-sizing: border-box; font-kerning: none;
-}
-.title span {
-    color: var(--primary);
-}
-
-.cluster {
-    position:relative; top: -3%; width:100%; max-width:874px; height:792px; margin:0 auto; background-color:transparent; 
-}
-
-.clusterPieces{position:absolute;}
-
-.circle{width:100%; max-width:360px; height:360px; border-radius:50%; background-color:#fc659e; left:214px; bottom:-5%; z-index:1;}
+.reveal-text {
+    font-size: 4rem;
+    font-family: "Libre Baskerville", serif;
+    color: #000;
+    filter: drop-shadow(0 0 0, 0.06rem rgb(255, 255, 255));
 
 
-.dotsBlue{width:100%; height:auto; max-width:494px; max-height:434px; z-index:3; left:-80%; top:50px;}
-
-.me{width:100%; height:auto; max-width:450px; max-height:700px; top:20%; right:0; z-index:2;}
-
-span.html {
-    color: #f06529;
-}
-
-span.css {
-    color: #2965f1;
-}
-
-span.js {
-    color: #f0db4f;
 }

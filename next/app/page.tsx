@@ -2,6 +2,7 @@
 
 import Image from "next/image"
 import SectionList from "@/design/components/sectionList"
+import Skills from "@/design/components/skills"
 
 
 export default function Home() {
@@ -128,7 +129,7 @@ export default function Home() {
 
       <main className="images">
         <SectionList />
-      
+        <Skills />
       </main>
     </main>
   )
