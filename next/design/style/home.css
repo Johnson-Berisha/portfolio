@@ -507,13 +507,13 @@ background: radial-gradient(circle, rgba(255, 255, 255, 0) 2%, rgba(0,0,0,1) 98%
 }
 
 .scrollbar {
-    width: 5px;
+    width: 1px;
     height: 100%;
     background-color: white;
     position: relative;
 }
 
-.scrollbar::after {
+.scrollbar-ball {
     content: '';
     display: block;
     width: 15px;
@@ -522,31 +522,12 @@ background: radial-gradient(circle, rgba(255, 255, 255, 0) 2%, rgba(0,0,0,1) 98%
     border: 1px solid white;
     border-radius: 50%;
     position: absolute;
-    bottom: 35%;
+    top: 25%;
     left: -7px;
-}
-
-.scrollbar::before {
-    content: '';
-    display: block;
-    width: 15px;
-    height: 15px;
-    background-color: black;
-    border: 1px solid white;
-    border-radius: 50%;
-    position: absolute;
-    bottom: 85%;
-    left: -7px;
+    box-shadow: 0 0 18px 18px black;
 }
 
 
-.skills-text {
-    height: 100%;
-    padding: 5rem 2.5rem;
-    font-size: 23px;
-    font-family: 'Libre Baskerville', serif;
-    line-height: 29px;
-}
 
 
 
