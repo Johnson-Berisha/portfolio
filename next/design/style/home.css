@@ -494,40 +494,30 @@ background: radial-gradient(circle, rgba(255, 255, 255, 0) 2%, rgba(0,0,0,1) 98%
 }
 
 .skills {
-    height: 100vh;
+    height: 150vh;
     background-color: #000;
     color: white;
     
 }
 
-.container {height: 100%;
+
+.big-text1 {
+    font-size: 70px;
+    font-family: 'Libre Baskerville', serif;
+
+    margin:0 200px;
+    line-height: 85px;
+
+    height: 100vh;
+
     display: flex;
+    justify-content: center;
     align-items: center;
-    flex-direction: row;
-}
-
-.scrollbar {
-    width: 1px;
-    height: 100%;
-    background-color: white;
-    position: relative;
-}
-
-.scrollbar-ball {
-    content: '';
-    display: block;
-    width: 15px;
-    height: 15px;
-    background-color: black;
-    border: 1px solid white;
-    border-radius: 50%;
-    position: absolute;
-    top: 25%;
-    left: -7px;
-    box-shadow: 0 0 18px 18px black;
 }
 
 
-
+.bt1-span {
+    color: var(--primary);
+}
 
 
