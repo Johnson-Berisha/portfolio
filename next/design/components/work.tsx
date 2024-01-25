@@ -6,7 +6,7 @@ function work () {
 
             <div className="work-section-title">
             <div className="scroll-section ss-1"><div className="abtfs-txt">
-                <span className="abtfs-txt-2">4/5</span>
+                <span className="abtfs-txt-2">3/5</span>
                 My Work
             </div></div>
             </div>

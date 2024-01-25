@@ -7,10 +7,24 @@ function skills() {
     <main className='skills'>
   
   <div className="container">
+   
     <div className="big-text1">
+      <div className="s-title">
+        <div className="skills-dots"></div>
+      
+      <div className="abtfs-txt">
+                <span className="abtfs-txt-2">2/5</span>
+                My Skills
+           
+            </div>
+
+            
+      </div>
+    
       <p><span className="bt1-span">It has become time to be more professional</span>, I am a passionate web development enthusiast and CSS aficionado. Armed with a versatile skill set, I excel in <span style={
         {color: "#f06529"}
-      }>HTML</span>, <span style={{color: "#2965f1"}}>CSS</span>, <span style={{color: "#f0db4f"}}>Javascript</span>, <span>NextJS ▲</span>, <span style={{color: "#2ab8cb"}}>React</span>, <span style={{color: "#007acc"}}>Typescript</span>, and <span style={{color: "#507d2a"}}>GSAP</span>. My journey involves translating ideas into captivating digital experiences. Let's embark on a coding adventure together, crafting innovative and visually appealing web solutions. Join me in the exciting realm where creativity meets technology! </p>
+      }>HTML</span>, <span style={{color: "#2965f1"}}>CSS</span>, <span style={{color: "#f0db4f"}}>Javascript</span>, <span>NextJS ▲</span>, <span style={{color: "#2ab8cb"}}>React</span>, <span style={{color: "#007acc"}}>Typescript</span>, and <span style={{color: "#507d2a"}}>GSAP</span>. Let's embark on a coding adventure together, crafting innovative and visually appealing web solutions. Join me through the contact page!</p>
+      
       
     </div>
     <div className="box-sec">
@@ -65,6 +79,7 @@ function skills() {
     </div>
        
     </div>
+    
     </div>
 </main>
   )

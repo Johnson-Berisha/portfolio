@@ -495,8 +495,9 @@ background: radial-gradient(circle, rgba(255, 255, 255, 0) 2%, rgba(0,0,0,1) 98%
 
 .skills {
     height: 110vh;
+    position: relative;
     background-color: #161b22;
-    color: white;
+    color: rgba(255, 255, 255);
     
 }
 
@@ -513,6 +514,7 @@ background: radial-gradient(circle, rgba(255, 255, 255, 0) 2%, rgba(0,0,0,1) 98%
 
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
 
     /* background: yellowgreen; */
@@ -524,6 +526,40 @@ background: radial-gradient(circle, rgba(255, 255, 255, 0) 2%, rgba(0,0,0,1) 98%
 
 }
 
+.big-text1 .abtfs-txt {
+    margin-bottom: 2rem;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 60px;
+    padding: 5px 0;
+}
+
+.skills-dots {
+    position: absolute;
+    width: 480px;
+    height: 350px;
+    background-image: radial-gradient(
+        rgba(255, 255, 255, 0.395) 8%, 
+        transparent 8%
+      );
+      background-position: 0% 0%;
+      background-size: 5vmin 5vmin;
+      left: 2%;
+      top: 2%;
+}
+
+.skills-box {
+    position: absolute;
+    width: 420px;
+    height: 250px;
+    background: linear-gradient(68deg,#212831 2%,transparent 60%);
+    right: 0;
+    bottom: 0;
+    border-top-left-radius: 20px;
+    z-index: -1;
+
+
+
+}
 
 /* half time section */
 

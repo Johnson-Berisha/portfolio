@@ -38,7 +38,7 @@ export default function ScrollSection() {
     <div ref={triggerRef}>
         <div ref={sectionRef} className="scroll-section-inner">
             <div className="scroll-section ss-1"><div className="abtfs-txt">
-                <span className="abtfs-txt-2">1/5</span>
+                <span className="abtfs-txt-2">1/4</span>
                 About Me
             </div></div>
             <div className="scroll-section ss-2">
