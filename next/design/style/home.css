@@ -470,7 +470,7 @@ background: radial-gradient(circle, rgba(255, 255, 255, 0) 2%, rgba(0,0,0,1) 98%
 }
 
 .custom-shape-divider-bottom-1703709061 .shape-fill {
-    fill: black;
+    fill: #161b22;
 }
 
 .custom-shape-divider-top-1703709304 {
@@ -494,30 +494,52 @@ background: radial-gradient(circle, rgba(255, 255, 255, 0) 2%, rgba(0,0,0,1) 98%
 }
 
 .skills {
-    height: 150vh;
-    background-color: #000;
+    height: 110vh;
+    background-color: #161b22;
     color: white;
     
 }
 
 
 .big-text1 {
-    font-size: 70px;
+    font-size: 45px;
     font-family: 'Libre Baskerville', serif;
 
-    margin:0 200px;
-    line-height: 85px;
+    margin:0 125px;
+    line-height: 60px;
+    text-align: center;
 
-    height: 100vh;
+    height: 85vh;
 
     display: flex;
     justify-content: center;
     align-items: center;
+
+    /* background: yellowgreen; */
 }
 
 
 .bt1-span {
     color: var(--primary);
+
 }
+
+
+/* half time section */
+
+.box-sec {
+    height: 20vh;
+ 
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    
+
+}
+
+
+/* work */
+
 
 
