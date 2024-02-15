@@ -6,12 +6,12 @@ import Skills from "@/design/components/skills"
 import Work from "@/design/components/work"
 
 
+
+
 export default function Home() {
   return (
     <main>
-
-      <div className="home">
-        <div className="header">
+      <div className="header">
           <div className="logo">
             <Image width="40" height="40" src="/img/longlogo.svg" alt="" />
           </div>
@@ -33,6 +33,8 @@ export default function Home() {
             </a>
           </div>
         </div>
+      <div className="home">
+        
         <div className="hero">
           <div className="hero-content">
             <p className="hero-small-text">Hello, I’m</p>

@@ -5,7 +5,7 @@
   
 
 :root {
-    --primary: #32d5eb;
+    --primary: rgb(50, 213, 235);
     --secondary: #2ab8cb;
     --black: #000000;
     --white: #ffffff;
@@ -37,8 +37,17 @@ body {
     justify-content: space-between;
     align-items: center;
     height: 10vh;
-    padding: 10px 0;
-    /* background-color:red; */
+    width: 100%;
+    padding: 0 70px;
+    position: fixed;
+    background-color:#f3f3f3;
+    z-index: 1000;
+    transition: all .3s;
+}
+
+.header:hover {
+    height: 12.5vh;
+    background-color: rgb(219, 219, 219);
 }
 
 .links {
@@ -573,7 +582,6 @@ background: radial-gradient(circle, rgba(255, 255, 255, 0) 2%, rgba(0,0,0,1) 98%
     
 
 }
-
 
 /* work */
 
