@@ -3,7 +3,7 @@
 import Image from "next/image"
 import SectionList from "@/design/components/sectionList"
 import Skills from "@/design/components/skills"
-import Work from "@/design/components/work"
+
 
 
 
@@ -133,7 +133,7 @@ export default function Home() {
       <main className="images">
         <SectionList />
         <Skills />
-        <Work />
+   
       </main>
     </main>
   )
