@@ -13,7 +13,7 @@ function skills() {
         <div className="skills-dots"></div>
       
       <div className="abtfs-txt">
-                <span className="abtfs-txt-2">2/5</span>
+                <span className="abtfs-txt-2">3/4</span>
                 My Skills
            
             </div>

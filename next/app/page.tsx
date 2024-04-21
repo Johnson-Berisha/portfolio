@@ -3,6 +3,7 @@
 import Image from "next/image"
 import SectionList from "@/design/components/sectionList"
 import Skills from "@/design/components/skills"
+import Contact from "@/design/components/contact"
 
 
 
@@ -25,9 +26,7 @@ export default function Home() {
             <a href="#" className="link">
               Skills
             </a>
-            <a href="#" className="link">
-              Work
-            </a>
+          
             <a href="#" className="link bold-link">
               Contact
             </a>
@@ -133,6 +132,7 @@ export default function Home() {
       <main className="images">
         <SectionList />
         <Skills />
+        <Contact />
    
       </main>
     </main>
