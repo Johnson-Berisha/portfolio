@@ -25,7 +25,17 @@ function contact() {
                 </div>
                 <div className="section section3">
                 <div className="stitle">Pitch Me!</div>
-                    <input type="text" className='name' />
+              <form action="">
+                    <div className="group group1">
+                        <input type="text" name="name" id="name" placeholder='My cool name...' autoComplete='off' required />
+                        <input type="email" name='email' id='email' placeholder='My cool email...' autoComplete='off' required />
+                    </div>
+                    <div className="group group2">
+                        <input type="text" name="message" id="message" placeholder='My cool message...' autoComplete='off' />
+                    </div>
+
+                   <button type='submit' className='btn2'><span>Send</span><i className="gg-mail mail2"></i></button>
+                   </form>
                 </div>
             </div>
         </div>

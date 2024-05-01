@@ -670,7 +670,89 @@ i.gg-pin {
 /* section 3 */
 
 .section3 {
-    background-color: rgb(219, 219, 219);
-    padding: 8.5rem 3rem;
-    
+    background-color: var(--primary);
+    color: #fff;
+    padding: 6.5rem 3rem;
+
 }
+
+.group1 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+input:focus {
+    outline: none;
+}
+
+input {
+    width: 47%;
+    height: 35px;
+    padding: 2px 5px;
+    background: transparent;
+    border: none;
+    border-bottom: white 2px solid;
+    
+    cursor: pointer;
+
+    /* text */
+    color: white;
+    font-weight: 700;
+    font-family: 'monserrat', sans-serif;
+    font-size: 14px;
+}
+
+
+input::placeholder {
+    color: white;
+    font-weight: 700;
+    font-family: 'monserrat', sans-serif;
+    font-size: 14px;
+}
+
+.group2 input{
+    width: 100%;
+    height: 45px;
+  
+
+}
+
+button.btn2 {
+    margin-top: calc(433.185px - 204.885px* 2);
+    width: 138.299px;
+    padding: 15.708px 14.635px;
+    gap: 7.317px;
+    border-radius: 5px;
+    background: var(--primary);
+    border: none;
+    color: var(--neutral-white, #FFF);
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 15.171px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    font-family: 'work sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease;
+    border: 2px solid #fff;
+    cursor: pointer;
+}
+
+.btn2:hover {
+    transform: scale(1.05);
+}
+
+button.btn2 span{
+    font-size: 15.171px;
+    margin-right: 5px;
+}
+
+i.mail2 {
+    color: white;
+    margin: 0;
+}
+
