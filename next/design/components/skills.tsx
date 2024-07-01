@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 function skills() {
   return (
-    <main className='skills'>
+    <main className='skills' id='skillsSection'>
   
   <div className="container">
    

@@ -43,6 +43,8 @@ body {
     background-color:#f3f3f38f;
     z-index: 1000;
     transition: all .3s;
+
+    backdrop-filter: blur(5px);
 }
 
 .header:hover {
@@ -705,10 +707,15 @@ input {
 
 
 input::placeholder {
-    color: white;
+    color: rgb(238, 238, 238);
     font-weight: 700;
     font-family: 'monserrat', sans-serif;
     font-size: 14px;
+}
+
+input:focus::placeholder {
+    color: rgba(238, 238, 238, 0);
+    
 }
 
 .group2 input{
@@ -719,9 +726,9 @@ input::placeholder {
 }
 
 button.btn2 {
-    margin-top: calc(433.185px - 204.885px* 2);
-    width: 138.299px;
-    padding: 15.708px 14.635px;
+    margin-top: 30px;
+    /* width: 140px; */
+    padding: 10px 30px;
     gap: 7.317px;
     border-radius: 5px;
     background: var(--primary);
@@ -756,3 +763,16 @@ i.mail2 {
     margin: 0;
 }
 
+
+/* media queries */
+
+@media screen and (max-width: 550px) {
+    body {
+        overflow: hidden;
+    }
+    
+    .header {
+        display: grid;
+        place-items: center;
+    }
+}

@@ -3,33 +3,43 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import image from "../../public/img/me.jpg";
 
+// did i add the comments? fuck no, who did? codeium did :3 its so coooool
+
 export default function ScrollSection() {
 
-    const sectionRef = useRef(null);
-    const triggerRef = useRef(null);
+    /**
+     * A scroll section component that uses GSAP ScrollTrigger to animate scrolling.
+     * The component animates the sectionRef element to translateX: "-180vh" when scrolled.
+     */
+    const sectionRef = useRef(null); // Reference to the section element
+    const triggerRef = useRef(null); // Reference to the trigger element
 
-    gsap.registerPlugin(ScrollTrigger);
+    gsap.registerPlugin(ScrollTrigger); // Register GSAP ScrollTrigger plugin
 
     useEffect(() => {
-      
+        /**
+         * Animation function that animates the sectionRef element to translateX: "-180vh" 
+         * when scrolled using GSAP ScrollTrigger.
+         */
         const pin = gsap.fromTo(sectionRef.current, {
-            translateX: 0
+            translateX: 0 // Initial translateX value
         }, {
-            translateX: "-180vh",
-            ease: "none",
-            duration: 1,
+            translateX: "-180vh", // Final translateX value
+            ease: "none", // Easing function
+            duration: 1, // Duration of the animation
             scrollTrigger: {
-                trigger: triggerRef.current,
-                start: "top top",
-                end: "2000 top",
-                scrub: true,
-                pin: true
+                trigger: triggerRef.current, // Trigger element
+                start: "top top", // Start position of the animation
+                end: "2000 top", // End position of the animation
+                scrub: true, // Scrubbing effect  
+                pin: true // Pin the element to its position
             }
         })
     
-      return () => {
-        pin.kill()
-      }
+        // Cleanup function to kill the animation when the component unmounts
+        return () => {
+            pin.kill()
+        }
     }, [])
     
 
@@ -41,7 +51,7 @@ export default function ScrollSection() {
                 <span className="abtfs-txt-2">2/4</span>
                 About Me
             </div></div>
-            <div className="scroll-section ss-2">
+            <div className="scroll-section ss-2" id="aboutSection">
                 <div className="text-section">
                     <h1>About Me</h1>
                     <br /><br />

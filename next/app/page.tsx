@@ -4,12 +4,27 @@ import Image from "next/image"
 import SectionList from "@/design/components/sectionList"
 import Skills from "@/design/components/skills"
 import Contact from "@/design/components/contact"
-
-
-
-
+// import { useRef } from "react";
 
 export default function Home() {
+
+// codeium is very cool and i like it so much i can't stop using it :3
+
+/**
+ * Scrolls to the specified section on the page.
+ * @param {string} section - The id of the section to scroll to.
+ */
+function scrollToSection(section: string) {
+  // Get the element with the specified id
+  const sec = document.getElementById(section);
+
+  // Check if the element exists
+  if (sec) {
+    // Scroll to the element with smooth behavior
+    sec.scrollIntoView({ behavior: 'smooth' });
+  }
+}
+
   return (
     <main>
       <div className="header">
@@ -17,22 +32,22 @@ export default function Home() {
             <Image width="40" height="40" src="/img/longlogo.svg" alt="" />
           </div>
           <div className="links">
-            <a href="#" className="link">
+            <a href="#" className="link" onClick={(event) => { event.preventDefault();  scrollToSection('homeSection')}}>
               Home
             </a>
-            <a href="#" className="link">
+            <a href="#" className="link" onClick={(event) => { event.preventDefault();  scrollToSection('aboutSection')}}>
               About
             </a>
-            <a href="#" className="link">
+            <a href="#" className="link" onClick={(event) => { event.preventDefault();  scrollToSection('skillsSection')}}>
               Skills
             </a>
           
-            <a href="#" className="link bold-link">
+            <a href="#" className="link bold-link" onClick={(event) => { event.preventDefault();  scrollToSection('contactSection')}}>
               Contact
             </a>
           </div>
         </div>
-      <div className="home">
+      <div className="home" id="homeSection">
         
         <div className="hero">
           <div className="hero-content">
@@ -107,7 +122,7 @@ export default function Home() {
             experiences. Currently, I’m focused on building responsive
             full-stack web applications.
           </div>
-          <button className="sabt-btn">Get In Touch</button>
+          <button className="sabt-btn" onClick={(event) => { event.preventDefault();  scrollToSection('contactSection')}}>Get In Touch</button>
         </div>
         <div className="sabt-img">
           <Image width="480" height="474" src="/img/me.jpg" alt="me!" />
