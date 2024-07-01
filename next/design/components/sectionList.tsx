@@ -24,7 +24,7 @@ export default function ScrollSection() {
         const pin = gsap.fromTo(sectionRef.current, {
             translateX: 0 // Initial translateX value
         }, {
-            translateX: "-180vh", // Final translateX value
+            translateX: "-50%", // Final translateX value
             ease: "none", // Easing function
             duration: 1, // Duration of the animation
             scrollTrigger: {

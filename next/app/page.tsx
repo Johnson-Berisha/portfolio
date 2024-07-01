@@ -54,7 +54,7 @@ function scrollToSection(section: string) {
             <p className="hero-small-text">Hello, I’m</p>
             <h1 className="hero-h1 hh1-1">Johnson</h1>
             <h1 className="hero-h1 hh1-2">Berisha</h1>
-
+            <div className="blobs">
             <Image
               width="40"
               height="40"
@@ -69,6 +69,7 @@ function scrollToSection(section: string) {
               src="/img/blob2.svg"
               alt=""
             />
+            </div>
           </div>
         </div>
         <div className="social">

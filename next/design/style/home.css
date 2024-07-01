@@ -83,6 +83,8 @@ body {
     height: 45px;
 }
 
+
+
 .hero {
     height: 75vh;
   
@@ -772,7 +774,39 @@ i.mail2 {
     }
     
     .header {
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-content{
+        margin: 0;
+        text-align: center;
         display: grid;
         place-items: center;
     }
+
+    .hh1-1{
+        transform: translate(0, 0);
+    }
+
+
+
+    .hero-h1 {
+        font-size: 75px;
+    }
+
+
+    .hero .blob, .hero .blob2 {
+        z-index: -1;
+        
+    }
 }
+
