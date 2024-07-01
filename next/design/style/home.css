@@ -772,6 +772,8 @@ i.mail2 {
     body {
         overflow: hidden;
     }
+
+    /* -- Making responsive: Header and Hero section -- */
     
     .header {
         display: flex;
@@ -784,29 +786,26 @@ i.mail2 {
         display: flex;
         justify-content: center;
         align-items: center;
-    }
-
+        }
     .hero-content{
         margin: 0;
-        text-align: center;
         display: grid;
+        text-align: center;
         place-items: center;
+        width: 100%;
     }
-
-    .hh1-1{
+    .hh1-1, .hero-small-text{
         transform: translate(0, 0);
     }
-
-
-
     .hero-h1 {
-        font-size: 75px;
+        font-size: 80px;
     }
-
-
     .hero .blob, .hero .blob2 {
         z-index: -1;
-        
-    }
+        }
+    /* -- Making responsive: Small-About section -- */
+
+          
+    
 }
 
