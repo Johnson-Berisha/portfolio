@@ -780,6 +780,7 @@ i.mail2 {
         flex-direction:column;
         justify-content: center;
         align-items: center;
+        /* width: 100%; */
     }
 
     .hero {
@@ -805,7 +806,21 @@ i.mail2 {
         }
     /* -- Making responsive: Small-About section -- */
 
-          
+    .smallabout{
+        display: block;
+        margin: 0 10px;
+        height: 100vh;
+    }
+
+    .smallabout-content {
+        text-align: center;
+        width: 100%;
+    }
+
+    .sabt-bigtxt {
+        font-size: 25px;
+    }
+    
     
 }
 
