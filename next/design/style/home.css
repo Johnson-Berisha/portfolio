@@ -770,7 +770,7 @@ i.mail2 {
 
 @media screen and (max-width: 550px) {
     body {
-        overflow: hidden;
+        overflow-y: hidden;
     }
 
     /* -- Making responsive: Header and Hero section -- */
